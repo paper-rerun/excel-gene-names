@@ -1,0 +1,9 @@
+species,tier,auto_papers,confirmed,sampled,precision_pct,ci_low,ci_high
+human,A,370,19,19,100.0,83.2,100.0
+human,B,1326,54,54,100.0,93.4,100.0
+mouse,A,55,7,7,100.0,64.6,100.0
+mouse,B,171,11,11,100.0,74.1,100.0
+mouse_or_rat,A,1,1,1,100.0,20.7,100.0
+mouse_or_rat,B,1,1,1,100.0,20.7,100.0
+rat,A,2,2,2,100.0,34.2,100.0
+rat,B,15,5,5,100.0,56.6,100.0
