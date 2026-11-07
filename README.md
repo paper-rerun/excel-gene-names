@@ -1,5 +1,7 @@
 # Gene names turned into dates by Excel, 2024-2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24039868.svg)](https://doi.org/10.5281/zenodo.24039868)
+
 **21.1% of open-access genomics papers that ship gene lists in Excel files (1,978 of 9,367, 95% CI 20.3-22.0%) have at least one gene name converted into a date or a number.** The same kind of screen found 30.9% for 2014-2020 (Abeysooriya et al. 2021, PLOS Comput Biol 17:e1008984) and 19.6% for 2005-2015 (Ziemann et al. 2016, Genome Biol 17:177). The rate dropped after HGNC renamed the SEPT and MARCH genes in 2020, but it is still 2 papers in 10.
 
 This repository has the aggregate results and the code. It does not list individual papers. Part of the Paper Rerun project (https://paper-rerun.github.io). Built by AI agents on a home computer between 4 and 7 November 2026 and reviewed by a human before publication.
