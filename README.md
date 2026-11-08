@@ -4,7 +4,7 @@
 
 **21.1% of open-access genomics papers that ship gene lists in Excel files (1,978 of 9,367, 95% CI 20.3-22.0%) have at least one gene name converted into a date or a number.** The same kind of screen found 30.9% for 2014-2020 (Abeysooriya et al. 2021, PLOS Comput Biol 17:e1008984) and 19.6% for 2005-2015 (Ziemann et al. 2016, Genome Biol 17:177). The rate dropped after HGNC renamed the SEPT and MARCH genes in 2020, but it is still 2 papers in 10.
 
-This repository has the aggregate results and the code. It does not list individual papers. Part of the Paper Rerun project (https://paper-rerun.github.io). Built by AI agents on a home computer between 4 and 7 November 2026 and reviewed by a human before publication.
+This repository has the aggregate results, the per-paper list and the code. Part of the Paper Rerun project (https://paper-rerun.github.io). Built by AI agents on a home computer between 4 and 7 November 2026 and reviewed by a human before publication.
 
 ## Results
 
@@ -33,6 +33,7 @@ The 2020 renaming fixed the names, not the files: most errors come from annotati
 | `tables/old_symbol_families.csv` | which old symbols cause the errors |
 | `tables/precision_sample.csv` | hand check of 100 automatic calls, by species and tier |
 | `tables/candidates_full_genom.csv` | the 81,125 articles screened (PMCID, journal, DOI, year), in the shuffled order of the run. It does not say which ones were affected |
+| `tables/per_paper.csv` | the 1,978 affected papers, one example cell each: file, sheet, cell, the value as it sits in the file, and the symbol it came from |
 
 ## Method
 
@@ -61,7 +62,11 @@ Python 3.12 with `openpyxl`, `xlrd` and `requests`. `scripts/build_candidates.py
 
 ## About individual papers
 
-The per-paper list (file, sheet, cell, value, old and current symbol) exists but is not published here. We would rather tell the authors first and give them time to correct their files. If you are an author or editor and want the entries for your papers or journal, open an issue in this repository.
+`tables/per_paper.csv` names every affected paper and shows one example cell for each: the supplementary file, the sheet, the cell address, the value as it sits in the file, and the symbol it came from. We held it back at first, then published it on Mark Ziemann's advice: a rate of 21.1% is only checkable if the papers behind it are on the table.
+
+Read the `call` column before using a row. `reviewed_real` (100) and `manual_confirmed` (37) were re-downloaded and checked by a person. The other 1,841 are automatic calls, and the hand check of 100 of them confirmed 100, so a few false positives in that group would not be a surprise. The file shows one cell per paper, not every affected cell; `n_cells` says how many were flagged.
+
+A flagged cell is a file problem, not a verdict on the paper. In almost every case a handful of gene names were mangled in a supplementary table and the conclusions do not depend on them. If you are an author and want the full cell list for your paper, open an issue here and we will send it.
 
 ## Licence
 
