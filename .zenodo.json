@@ -1,14 +1,14 @@
 {
   "title": "Gene names turned into dates by Excel in open-access genomics papers, 2024-2026",
   "upload_type": "dataset",
-  "description": "Screen of all 81,125 open-access PubMed Central papers from 2024-2026 with supplementary material and 'genom*' in the title or abstract. 9,367 shipped gene lists in Excel files, and an estimated 1,978 of them (21.1%, 95% CI 20.3-22.0%) contain at least one gene name converted into a date or number, against 30.9% in 2014-2020. A hand check of 100 random automatic calls confirmed all 100 (precision 95% CI 96.3-100%). Aggregate rates by species, year and journal, a comparison with the 2014-2020 screen for 23 journals, the old symbols behind the errors (including Excel locales such as Portuguese, Dutch, French, Finnish and Italian), and the code. Individual papers are not listed. Built by AI agents on a home computer and reviewed by a human before publication. Part of the Paper Rerun project.",
+  "description": "Screen of all 81,125 open-access PubMed Central papers from 2024-2026 with supplementary material and 'genom*' in the title or abstract. 9,367 shipped gene lists in Excel files, and an estimated 1,978 of them (21.1%, 95% CI 20.3-22.0%) contain at least one gene name converted into a date or number, against 30.9% in 2014-2020. A hand check of 100 random automatic calls confirmed all 100 (precision 95% CI 96.3-100%). Aggregate rates by species, year and journal, a comparison with the 2014-2020 screen for 23 journals, the old symbols behind the errors (including Excel locales such as Portuguese, Dutch, French, Finnish and Italian), the per-paper list naming all 1,978 affected papers with one example cell each, and the code. Built by AI agents on a home computer and reviewed by a human before publication. Part of the Paper Rerun project.",
   "creators": [
     {
       "name": "Tessaro, Filipe"
     }
   ],
   "license": "cc-by-4.0",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "keywords": [
     "gene names",
     "Excel",
